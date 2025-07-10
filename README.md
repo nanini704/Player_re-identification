@@ -25,4 +25,4 @@ output/output_tracked.mp4
 
 Download the Object Detection Model from here:
 https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view
-This model is basic fine tuned version of Ultralytics YOLLOv11, trained for palyerss, not the ball.
+This model is basic fine tuned version of Ultralytics YOLLOv11, trained for players, not the ball.
