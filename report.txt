@@ -1,0 +1,30 @@
+Player Re-Identification 
+
+We created a system to monitor soccer players in a short video. The objective was to ensure that each player has the same ID even though they leave and re-enter the frame.
+
+Here's what we did:
+
+We applied a pre-trained YOLOv11 model to recognize players in each frame of the video.
+
+We assigned a unique ID to each detected player.
+
+If a player disappeared and returned later, we tried to map him again based on his position and appearance.
+
+
+What We Tried
+Color Histogram Matching:
+
+we extracted simple RGB histograms from player regions.
+
+Helped re-identify players when they returned after disappearance.
+
+YOLOv11 fine-tuned model:
+This object detection model helped us find players, referees, and the ball.
+
+Problems We Faced
+Sometimes the player IDs kept changing when players were close together or overlapped.
+
+Some players were missed when they were in the background or partially occluded.
+
+could not assign a constant id to the players.
+
